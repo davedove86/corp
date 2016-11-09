@@ -1,0 +1,49 @@
+header
+  position: relative
+  background-color: $accent
+  height: 400px
+
+  // CORP TITLE
+  .logo
+    position: absolute
+    left: 50%
+    margin-left: -25px
+    color: $accent-light
+    text-transform: uppercase
+    font-size: 28px
+
+
+.responsive-container
+  position: relative
+  width: 100%
+  // border: 1px solid black
+
+  .img-container
+    position: absolute
+    top: 200px
+    bottom: 0
+    left: 0
+    right: 0
+    text-align: center
+    font: 0
+
+
+  .img-container:before
+    content: ' '
+    display: inline-block
+    vertical-align: middle
+    height: 100%
+
+
+  .img-container
+    img
+      height: 300px
+      vertical-align: middle
+      display: inline-block
+
+  @media (max-width: 505px)
+    .img-container
+      top: 270px
+
+      img
+        height: 220px
