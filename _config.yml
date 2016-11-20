@@ -12,7 +12,7 @@ github_username:
 markdown: kramdown
 permalink: pretty
 
-port: 9000
+port: 8000
 
 sass:
   sass_dir: assets/css

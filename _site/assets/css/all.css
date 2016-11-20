@@ -158,82 +158,6 @@ td, th {
   font-style: normal;
   font-weight: 700;
   src: local("Open Sans Bold"), local("OpenSans-Bold"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format("woff"); }
-/*	Typography presets
- * ------------------------------------	 */
-.gigantic, .huge, .large, .bigger, .big,
-h1, h2, h3, h4, h5, h6 {
-  color: #333;
-  font-weight: bold; }
-
-.gigantic {
-  font-size: 110px;
-  line-height: 1.09;
-  letter-spacing: -2px; }
-
-.huge, h1 {
-  font-size: 68px;
-  line-height: 1.05;
-  letter-spacing: -1px; }
-
-.large, h2 {
-  font-size: 42px;
-  line-height: 1.14; }
-
-.bigger, h3 {
-  font-size: 26px;
-  line-height: 1.38; }
-
-.big, h4 {
-  font-size: 22px;
-  line-height: 1.38; }
-
-.small, small {
-  font-size: 10px;
-  line-height: 1.2; }
-
-p {
-  margin: 0 0 20px 0; }
-
-em {
-  font-style: italic; }
-
-strong {
-  font-weight: bold; }
-
-hr {
-  border: solid #ddd;
-  border-width: 1px 0 0;
-  clear: both;
-  margin: 10px 0 30px;
-  height: 0; }
-
-/* Links
- * ------------------------------------	 */
-a {
-  color: #21a1e1;
-  text-decoration: none;
-  outline: 0; }
-
-a:hover, a:focus {
-  color: #7bc7ed; }
-
-/* Selection colors (easy to forget)
- * ------------------------------------	 */
-::selection {
-  background: #ffff9e; }
-
-::-moz-selection {
-  background: #ffff9e; }
-
-img::selection {
-  background: transparent; }
-
-img::-moz-selection {
-  background: transparent; }
-
-body {
-  -webkit-tap-highlight-color: #ffff9e; }
-
 /* Basic Styles
  * ------------------------------------	 */
 body {
@@ -246,6 +170,24 @@ body {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
   /*BACK TO TOP CTA */ }
+  body h1 {
+    font-size: 28px; }
+  body h5 {
+    font-size: 12px;
+    color: #75BDBF; }
+  body span {
+    font-weight: 300; }
+  body hr {
+    height: 2px;
+    width: 50px;
+    background-color: #75BDBF;
+    margin: 25px auto; }
+  body a {
+    list-style-type: none;
+    color: #75BDBF;
+    text-decoration: none; }
+  body a:hover {
+    color: #666; }
   body #return-to-top {
     position: fixed;
     bottom: 20px;
@@ -278,7 +220,7 @@ body {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
   body #return-to-top:hover {
-    background: #E7EBEF; }
+    background: #666; }
 
 header {
   position: relative;
@@ -393,19 +335,10 @@ html.menu-open .menu-plate {
     max-width: 400px;
     margin: 0 auto;
     padding: 0 20px; }
-    #about .about-title h1 {
-      font-size: 28px; }
-    #about .about-title span {
-      font-weight: 300; }
   #about .about-blurb {
     max-width: 490px;
     margin: 0 auto;
     padding: 0 10px; }
-  #about hr {
-    height: 2px;
-    width: 50px;
-    background-color: #75BDBF;
-    margin: 25px auto; }
   #about button {
     text-transform: uppercase;
     color: #fff;
@@ -444,3 +377,19 @@ html.menu-open .menu-plate {
       display: block; }
       #services .services-wrap .services-items {
         padding: 10px 0; } }
+
+.flex {
+  display: flex; }
+
+.col-1, .col-2 {
+  max-width: 640px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 10px; }
+
+img {
+  height: 130px; }
+
+@media (max-width: 640px) {
+  .flex {
+    display: block; } }

@@ -1,15 +1,6 @@
 ---
+layout: default
 ---
-
-<!DOCTYPE html>
-<html class="en">
-{% include head.html %}
-<body>
-
-
-  {% include header.html %}
-  <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a><link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
   <!-- About Section -->
 
   <section id="about">
@@ -48,7 +39,32 @@
     </div>
   </section>
 
-{% include footer.html %}
+  <!-- Articles Section -->
 
-</body>
-</html>
+  <section class="articles">
+    <!-- Flexbox -->
+    <div class="flex">
+      <div class="col-1">
+        <img src="{{site.baseurl}}/assets/img/social.png" alt="Social Media" />
+      </div>
+
+      <div class="col-2">
+        <h5>22 January 2016  |  by John Doe</h5>
+        <hr>
+        <h1>Web Checklist <span>2016</span></h1>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable thing embarrassing hidden in the middle of text...</p>
+        <button type="button" name="button">Read More</button>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div class="col-2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <div class="col-2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <!-- /Flexbox -->
+  </section>
