@@ -36,6 +36,11 @@ body
 
   a:hover
     color: #666
+
+
+  li
+    list-style-type: none
+
   /*BACK TO TOP CTA*/
 
   #return-to-top
@@ -74,3 +79,18 @@ body
 
   #return-to-top:hover
     background: #666
+
+.button
+  display: inline-block
+  background: $accent
+  color: #fff
+  text-transform: uppercase
+  padding: 10px 20px
+  border-radius: 5px
+  box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4)
+  cursor: pointer
+  transition: all ease-in-out 300ms
+
+  &:hover
+    box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2)
+    transform: translate(0px, -10px) scale(1.2)
