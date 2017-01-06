@@ -394,22 +394,20 @@ html.menu-open .menu-plate {
       #services .services-wrap .services-items {
         padding: 10px 0; } }
 
-.flex {
+.articles .flex {
   display: flex; }
-
-.col-1, .col-2 {
+.articles .col-1, .articles .col-2 {
   max-width: 50%;
   box-sizing: border-box;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto; }
-
-img {
+.articles img {
   height: 130px; }
-
 @media (max-width: 640px) {
-  .flex {
+  .articles .flex {
     display: block; } }
+
 .team {
   background-color: #75BDBF;
   height: auto;
